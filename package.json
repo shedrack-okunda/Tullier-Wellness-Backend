@@ -1,0 +1,22 @@
+{
+  "name": "tullier-wellness",
+  "version": "1.0.0",
+  "description": "where wellness is prioritized",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "keywords": [
+    "Trauma"
+  ],
+  "author": "Shedrack Okunda",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.9.1"
+  }
+}
