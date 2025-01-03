@@ -13,12 +13,14 @@ import userRoutes from './routes/User.js'
 import addressRoutes from './routes/Address.js'
 import reviewRoutes from './routes/Review.js'
 
+const db = process.env.MONGO_URI
+
 // server init
 const app = express()
 
 // database connection
 mongoose
-    .connect(process.env.MONGO_URI, {})
+    .connect(db, {})
     .then(() => console.log('Connected to db'))
     .catch((error) => console.log('Error:', error))
 
