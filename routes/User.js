@@ -1,9 +1,9 @@
 import express from 'express'
-import user from '../controllers/User.js'
+import { getById, updateById } from '../controllers/User.js'
 const router = express.Router()
 
 router
-    .get('/:id', user.getById)
-    .patch('/:id', user.updateById)
+    .get('/:id', getById)
+    .patch('/:id', updateById)
 
 export default router

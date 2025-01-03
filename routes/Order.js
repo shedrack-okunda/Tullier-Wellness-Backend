@@ -1,11 +1,11 @@
 import express from 'express'
-import order from '../controllers/Order.js'
+import { create, getAll, getByUserId, updateById } from '../controllers/Order.js'
 const router = express.Router()
 
 router
-    .post('/', order.create)
-    .get('/', order.getAll)
-    .get('/user/:id', order.getByUserId)
-    .patch('/:id', order.updateById)
+    .post('/', create)
+    .get('/', getAll)
+    .get('/user/:id', getByUserId)
+    .patch('/:id', updateById)
 
 export default router
