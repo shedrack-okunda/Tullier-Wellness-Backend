@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken'
-import { sanitizeUser } from '../utils/SanitizeUser'
+import { sanitizeUser } from '../utils/SanitizeUser.js'
 import dotenv from 'dotenv'
 dotenv.config()
 
