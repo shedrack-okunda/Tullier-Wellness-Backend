@@ -12,5 +12,5 @@ const addressSchema = new Schema({
     type: {type: String, required: true}
 })
 
-const Address = mongoose.Schema('Address', addressSchema)
+const Address = mongoose.model('Address', addressSchema)
 export default Address
